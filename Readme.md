@@ -33,22 +33,24 @@
 
 ### Introduction
 
-1. **Ray Casting**
+1. **Ray Casting**\
    Implemented Using Line Line Intersection Algorithm. The program is interactive to user's mouse position and ray is casted relative to the position of cursor.
-2. **Fourier Series**
+2. **Fourier Series**\
    Referenced from [Understanding Fourier Series](http://bgrawi.com/Fourier-Visualizations/). The visualization is animated and runs indefinitely.
-3. **Maze Generation Using DFS**
+3. **Maze Generation Using DFS**\
    Using Depth Forst Search (recursive algorithm), a maze is generated. The maze generation process (recursive backtracking) is animated.
-4. **Bubble Sort**
+4. **Bubble Sort**\
    Animated Visualization of how Bubble SOrt Algorithm Works
-5. **Particle Simulation**
+5. **Particle Simulation**\
    Using simple vector physics formula, the application is a particle simulation representing Fireworks cracking
    Refrenced From [Nature of Code](https://natureofcode.com/) by Daniel Shiffman
-6. **Minimum Spanning Tree**
+6. **Minimum Spanning Tree**\
    Realtime calculation and visualization of nodes in a Minimum Spanning Tree. This uses Prim's Algorithm.
    The program is interactive to user's cursor, and a node is created at the coordinate where left mouse is clicked. At the same time, a nearest neighbour is found and and the two nodes are connected in Real Time.
-7. **Mathematically Correct Flag of Nepal**
-   Refrencinf the Constitution of Nepal on how to create the FLag correctly, the flag is created in the program..
+7. **Graph View of Trigonometric Functions**\
+   Animated visualization of graph formed using all Trigonometric Functions
+8. **Mathematically Correct Flag of Nepal**\
+   Refrencing the Constitution of Nepal on how to create the FLag correctly, the flag is created in the program..
 
 ---
 
