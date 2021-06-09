@@ -11,27 +11,27 @@ void sinewave(){
 	float y;
 	int i;
 	
-	cleardevice();
+//	cleardevice();
 	line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
 	line(getmaxx()/2,0,getmaxx()/2,getmaxy());
 			for(i=0;i<1440;i++){
 				if(i<720){
 					y=50*sin((angle*PI)/180);
 		 			y=getmaxy()/2-y;
-		 			putpixel(i-6,y,GREEN);
+		 			putpixel(i-6,y,LIGHTBLUE);
 		 			angle++;	
-//		 			delay(0);
+		 			delay(0);
 			}
 			else{
 				y=50*sin((i*PI)/180);
 	 			y=getmaxy()/2-y;
-	 			putpixel(i-6,y,GREEN);
+	 			putpixel(i-6,y,LIGHTBLUE);
 	 			angle++;
-//	 			delay(0);
+	 			delay(0);
 			}
 		}
 				
-	menu();
+//	menu();
 }
 		 
 void cosinewave(){
@@ -39,52 +39,50 @@ void cosinewave(){
 	float y;
 	int i;
 	
-	cleardevice();
-line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
+//	cleardevice();
+ 
 	line(getmaxx()/2,0,getmaxx()/2,getmaxy());
 	for(i=0;i<1440;i++){
 		if(i<720){
 			y=50*cos((angle*PI)/180);
 	 		y=getmaxy()/2-y;
-	 		putpixel(i-6,y,GREEN);
+	 		putpixel(i-6,y,LIGHTGREEN);
 	 		angle++;	
 	 		delay(1);
 		}
 		else{
 			y=50*cos((i*PI)/180);
  			y=getmaxy()/2-y;
- 			putpixel(i-6,y,GREEN);
+ 			putpixel(i-6,y,LIGHTGREEN);
  			angle++;
  			delay(1);
 		}
 	}
-	menu();
+//	menu();
 }
 void tangentwave(){
 	int angle=0;
 	float y;
 	int i;
 	
-	cleardevice();
-line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
 	line(getmaxx()/2,0,getmaxx()/2,getmaxy());
 	for(i=0;i<1440;i++){
 		if(i<720){
 			y=50*tan((angle*PI)/180);
 	 		y=getmaxy()/2-y;
-	 		putpixel(i-6,y,GREEN);
+	 		putpixel(i-6,y,CYAN);
 	 		angle++;	
 	 		delay(1);
-		}
+	 	}
 		else{
 			y=50*tan((i*PI)/180);
  			y=getmaxy()/2-y;
- 			putpixel(i-6,y,GREEN);
+ 			putpixel(i-6,y,CYAN);
  			angle++;
  			delay(1);
 		}
 	}
-	menu();
+//	menu();
 
 }
 	
@@ -93,26 +91,26 @@ void cotecwave(){
 	float y;
 	int i;
 	
-	cleardevice();
-line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
+//	cleardevice();
+	line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
 	line(getmaxx()/2,0,getmaxx()/2,getmaxy());
 	for(i=0;i<1440;i++){
 		if(i<720){
 			y=50*1/tan((angle*PI)/180);
 	 		y=getmaxy()/2-y;
-	 		putpixel(i-6,y,GREEN);
+	 		putpixel(i-6,y,RED);
 	 		angle++;	
 	 		delay(1);
 		}
 		else{
 			y=50*1/tan((i*PI)/180);
  			y=getmaxy()/2-y;
- 			putpixel(i-6,y,GREEN);
+ 			putpixel(i-6,y,RED);
  			angle++;
  			delay(1);
 		}
 	}
-	menu();
+//	menu();
 }
 	
 void cosecantwave(){
@@ -120,52 +118,52 @@ void cosecantwave(){
 	float y;
 	int i;
 	
-	cleardevice();
-line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
+//	cleardevice();
+	line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
 	line(getmaxx()/2,0,getmaxx()/2,getmaxy());
  	for(i=0;i<1440;i++){
 		if(i<720){
 			y=50*1/sin((angle*PI)/180);
 	 		y=getmaxy()/2-y;
-	 		putpixel(i-6,y,GREEN);
+	 		putpixel(i-6,y,MAGENTA);
 	 		angle++;	
 	 		delay(1);
 		}
 		else{
 			y=50*1/sin((i*PI)/180);
  			y=getmaxy()/2-y;
- 			putpixel(i-6,y,GREEN);
+ 			putpixel(i-6,y,MAGENTA);
  			angle++;
  			delay(1);
 		}
 	}
-	menu();
+//	menu();
 
 }
 void secantwave(){
 	int angle=0;
 	float y;
 	int i;
-	cleardevice();
+//	cleardevice();
 	line(0,getmaxy()/2,getmaxx(),getmaxy()/2);
 	line(getmaxx()/2,0,getmaxx()/2,getmaxy());
  	for(i=0;i<1440;i++){
 		if(i<720){
 			y=50*1/cos((angle*PI)/180);
 	 		y=getmaxy()/2-y;
-	 		putpixel(i-6,y,GREEN);
+	 		putpixel(i-6,y,YELLOW);
 	 		angle++;	
 	 		delay(1);
 		}
 		else{
 			y=50*1/cos((i*PI)/180);
  			y=getmaxy()/2-y;
- 			putpixel(i-6,y,GREEN);
+ 			putpixel(i-6,y,YELLOW);
  			angle++;
  			delay(1);
 		}
 	}
-	menu();
+//	menu();
 
 }
 
@@ -225,21 +223,20 @@ void menu(){
 }
 int main(){
 	initwindow(1440,1080);
-	printf("%d %d",getmaxx(),getmaxy());
 	
-//	printf("Drawing SIne Wave!!!!");
-//	sinewave();
-//	printf("\nDrawing Cosine Wave!!!!");
-//	cosinewave();
-//	printf("\nDrawing Tangent Wave!!!!");
-//	tangentwave();
-//	printf("\nDrawing Cotec Wave!!!!");
-//	cotecwave();
-//	printf("\nDrawing Cosecant Wave!!!!");
-//	cosecantwave();
-//	printf("\nDrawing Secant Wave!!!!");
-//	secantwave();
-//	printf("\nAll Waves Drawn!!!!!");
-	menu();
+	printf("Drawing SIne Wave!!!!");
+	sinewave();
+	printf("\nDrawing Cosine Wave!!!!");
+	cosinewave();
+	printf("\nDrawing Tangent Wave!!!!");
+	tangentwave();
+	printf("\nDrawing Cotec Wave!!!!");
+	cotecwave();
+	printf("\nDrawing Cosecant Wave!!!!");
+	cosecantwave();
+	printf("\nDrawing Secant Wave!!!!");
+	secantwave();
+	printf("\nAll Waves Drawn!!!!!");
+//	menu();
 	getch();
 }
